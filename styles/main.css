@@ -91,14 +91,7 @@ body {
   color: #5bc0de;
 }
 
-@media screen and (max-width: 500px) {
-  .main-container .front-banner {
-    height: 100vh !important;
-    padding-top: 100px !important;
-    min-height: -webkit-fit-content !important;
-    min-height: -moz-fit-content !important;
-    min-height: fit-content !important;
-  }
+@media screen and (max-width: 900px) {
   .main-container .front-banner .greeting {
     font-size: 40px !important;
   }
@@ -127,7 +120,11 @@ body {
           align-items: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top: 200px;
+  padding-top: 100px !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  padding-bottom: 50px;
 }
 
 .main-container .front-banner img {

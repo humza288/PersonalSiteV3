@@ -80,11 +80,9 @@ body {
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
         .front-banner { 
-            height: 100vh !important; 
-            padding-top: 100px !important;
-            min-height: fit-content !important;
+            
 
             .greeting {
                 font-size: 40px !important;
@@ -109,7 +107,9 @@ body {
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
-        padding-top: 200px;
+        padding-top: 100px !important;
+        height: fit-content !important;
+        padding-bottom: 50px;
         
         img {
             border-radius: 50%;
@@ -369,6 +369,7 @@ body {
 
         form {
             margin-bottom: 75px;
+            
 
             label {
                 font-family: 'Oswald', sans-serif;
