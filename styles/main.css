@@ -91,6 +91,22 @@ body {
   color: #5bc0de;
 }
 
+@media screen and (max-width: 500px) {
+  .main-container .front-banner {
+    height: 100vh !important;
+    padding-top: 100px !important;
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
+  }
+  .main-container .front-banner .greeting {
+    font-size: 40px !important;
+  }
+  .main-container .front-banner img {
+    width: 150px !important;
+  }
+}
+
 .main-container .front-banner {
   background-image: url("../assets/background.jpg");
   background-size: cover;
@@ -111,13 +127,13 @@ body {
           align-items: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 .main-container .front-banner img {
   border-radius: 50%;
   width: 200px;
-  margin-top: 75px;
+  margin-top: 50px;
   box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
@@ -126,6 +142,8 @@ body {
 .main-container .front-banner .greeting {
   font-family: 'Patua One', cursive;
   font-size: 60px;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .main-container .front-banner .greeting span {
@@ -148,7 +166,7 @@ body {
 }
 
 .main-container .front-banner .links {
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 .main-container .front-banner .links a {
@@ -209,6 +227,7 @@ body {
   border-radius: 10px;
   padding: 2rem;
   width: 400px;
+  max-width: calc(95vw - 4rem);
 }
 
 .main-container .about .cards-container .skills-card div {
@@ -238,6 +257,8 @@ body {
   color: black;
   border-radius: 10px;
   padding: 2rem;
+  width: 400px;
+  max-width: calc(95vw - 4rem);
 }
 
 .main-container .about .cards-container .education-card div {
@@ -298,6 +319,7 @@ body {
   font-family: 'Oswald', sans-serif;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  max-width: calc(95vw - 4rem);
 }
 
 .main-container .projects .project-item .project-item-header {
