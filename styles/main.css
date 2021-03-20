@@ -1,0 +1,475 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.box-shadow {
+  box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  background-color: white !important;
+}
+
+.fa-code {
+  color: #5bc0de;
+}
+
+.cv {
+  position: fixed;
+  font-family: 'Oswald', sans-serif;
+  bottom: 20px;
+  right: 25px;
+  z-index: 3;
+  width: 100px;
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+}
+
+.cv a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.cv:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cv:hover a {
+  color: #5bc0de;
+}
+
+.main-container {
+  background-color: #F5F5F5;
+  height: 100vh;
+}
+
+.main-container .navbar {
+  float: left;
+  width: 100vw;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 2;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.main-container .navbar a {
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.main-container .navbar a:hover {
+  color: #5bc0de;
+}
+
+.main-container .front-banner {
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 72.5vh;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 150px;
+}
+
+.main-container .front-banner img {
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 75px;
+  box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
+}
+
+.main-container .front-banner .greeting {
+  font-family: 'Patua One', cursive;
+  font-size: 60px;
+}
+
+.main-container .front-banner .greeting span {
+  color: white;
+}
+
+.main-container .front-banner .details {
+  max-width: 600px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.main-container .front-banner .details a {
+  text-decoration: none;
+}
+
+.main-container .front-banner .details .university-name {
+  text-decoration: none;
+  color: white;
+}
+
+.main-container .front-banner .links {
+  margin-top: 75px;
+}
+
+.main-container .front-banner .links a {
+  color: black;
+}
+
+.main-container .front-banner .links a i {
+  padding: 7.5px;
+  font-size: 25px;
+}
+
+.main-container .front-banner .links i:hover {
+  color: gray;
+}
+
+.main-container .about {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .about .heading {
+  font-family: 'Patua One', cursive;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-container .about .cards-container {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+.main-container .about .cards-container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  margin-bottom: 100px;
+}
+
+.main-container .about .cards-container .skills-card {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 400px;
+}
+
+.main-container .about .cards-container .skills-card div {
+  margin-top: 10px;
+}
+
+.main-container .about .cards-container .skills-card div .title {
+  font-size: 25px;
+}
+
+.main-container .about .cards-container .skills-card div .title .frameworks {
+  color: #5bc0de;
+}
+
+.main-container .about .cards-container .skills-card div .frameworks {
+  color: #5bc0de;
+}
+
+.main-container .about .cards-container .skills-card div i {
+  padding: 10px;
+}
+
+.main-container .about .cards-container .education-card {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.main-container .about .cards-container .education-card div {
+  margin-top: 10px;
+}
+
+.main-container .about .cards-container .education-card div .title {
+  font-size: 25px;
+}
+
+.main-container .about .cards-container .education-card div .degrees {
+  color: #5bc0de;
+}
+
+.main-container .projects {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .main-container .projects .project-container {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main-container .projects .project-container {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+.main-container .projects .project-container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  margin-bottom: 100px;
+}
+
+.main-container .projects .project-item {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.main-container .projects .project-item .project-item-header {
+  font-family: 'Patua One', cursive;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0;
+  text-decoration: none;
+}
+
+.main-container .projects .project-item .project-item-header .icons a {
+  text-decoration: none;
+}
+
+.main-container .projects .project-item .project-item-header .icons i {
+  margin-right: 10px;
+  color: black;
+}
+
+.main-container .projects .project-item .project-item-header .icons i:hover {
+  color: #5bc0de;
+}
+
+.main-container .projects .project-item .project-item-header p {
+  margin-top: 0 !important;
+}
+
+.main-container .projects .project-item .technologies {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  bottom: 1rem;
+  left: 0.54rem;
+}
+
+.main-container .projects .project-item .technologies i {
+  color: #5bc0de;
+  margin-left: 1rem;
+}
+
+.main-container .projects .project-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.main-container .projects .heading {
+  font-family: 'Patua One', cursive;
+  font-size: 50px;
+}
+
+.main-container .projects .more-button {
+  border: 2.5px solid black;
+  text-align: center;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+
+.main-container .projects .more-button p {
+  font-family: 'Patua One', cursive;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-container .projects .more-button:hover {
+  border-color: #5bc0de;
+  cursor: pointer;
+}
+
+.main-container .projects .more-button:hover p {
+  color: #5bc0de;
+}
+
+.main-container .contact {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .contact .heading {
+  font-family: 'Patua One', cursive;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.main-container .contact form {
+  margin-bottom: 75px;
+}
+
+.main-container .contact form label {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.main-container .contact form input {
+  font-family: 'Oswald', sans-serif;
+  width: 1000px;
+  max-width: 85vw;
+  height: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.main-container .contact form textarea {
+  font-family: 'Oswald', sans-serif;
+  width: 1000px;
+  max-width: 85vw;
+  resize: none;
+  height: 400px;
+  max-height: 400px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.main-container .contact .submit-button {
+  border: 2.5px solid black;
+  text-align: center;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+
+.main-container .contact .submit-button p {
+  font-family: 'Patua One', cursive;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+}
+
+.main-container .contact .submit-button:hover {
+  border-color: #5bc0de;
+  cursor: pointer;
+}
+
+.main-container .contact .submit-button:hover p {
+  color: #5bc0de;
+}
+
+.main-container .footer {
+  text-align: center;
+  padding-top: 25px;
+  height: 125px;
+}
+
+.main-container .footer p {
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-container .footer .commit-count a i {
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

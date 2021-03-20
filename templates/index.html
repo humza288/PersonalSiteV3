@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+     <!--IMPORT ANGULARJS-->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <script src="../scripts/ngMask.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+     <script src="../scripts/app.js"></script>
+     <!-------------------->
+    <title>Humza Munir | Portfolio</title>
+</head>
+<body ng-app="portfolio">
+
+    <div class="cv">
+        <a href="https://docs.google.com/document/d/1agnl-3-RmlTlGe2BXKE3tLZMdfBm4iiI-AFq5eKGiVM/export?format=pdf"><p>CV</p></a>
+    </div>
+    
+    <div class="main-container">
+        <div id="navbar" class="navbar">
+            <a href="#about"><p>About</p></a>
+            <a href="#projects"><p>Projects</p></a>
+            <a href="#contact"><p>Contact</p></a>
+        </div>
+        <div class="front-banner">
+            <p class="greeting"><span>Hi,</span> I'm Humza.</span></p>
+            <p class="details">
+                Thank you for visiting my website. I am a recent graduate from the <a href="https://uci.edu">
+                    <span class="university-name">University of California, Irvine.</span></a> During my free time I like to build my skillset in full stack development, as well as iOS Development. If you like what you see feel free to reach out as I am currently looking for opportunities.
+            </p>
+            <img src="../assets/profile.jpg" alt="profil pic">
+
+            <div class="links">
+                <a href="https://github.com/humza288"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/humzamunir"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:humza288@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <p class="heading">About</p>
+
+            <div class="cards-container">
+                <div class="skills-card">
+                    <div>
+                        <div class="title">Languages<span class="frameworks">/ Frameworks</span></div>
+                        <div>
+                            C++, C#, Python, HTML, CSS, JavaScript, SQL,
+                        </div>
+                        <div class="frameworks">
+                                Asp.Net, AngularJS, ReactJS, & React Native. 
+                        </div>
+                        <div>
+                            <i class="fas fa-tools"></i>
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="education-card">
+                    <div>
+                        <div class="title">Education</div>
+                        <div>
+                            University of California, Irvine
+                        </div>
+                        <div class="degrees">
+                            B.S. Computer Science 2021
+                        </div>
+                        <div>
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="projects" id="projects">
+            <p class="heading">Projects</p>
+            <div class="project-container">
+                <div class="project-item">
+                    <div class="project-item-header">
+                        <p><i class="fa fa-code"></i> Minesweeper AI</p>
+                        <div class="icons">
+                            <a href="https://github.com/humza288/CS171_Project">                            
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="info">MineGuyz is a project inspired by the video game Fall Guys in a Minecraft enviornment. It utilizes reinforcement learning and CNNs, with the assistance of depth mapping and image segmentation, to allow the agent to finish the cross line first and win the competition by avoiding all obstacles.</p>                     
+                    <div class="technologies">
+                        <i class="fa fa-caret-right"></i> Python
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-header">
+                        <p><i class="fa fa-code"></i> Shredr</p>
+                        <div class="icons">
+                            <a href="https://github.com/humza288/Shredr-Public">                            
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="info">Fitness application to help users attain a desired weight goal, by tracking users activity, logging calories, and providing personalized restaurant recommendations with a collaborative filtering based recommendation engine.</p>                     
+                    <div class="technologies">
+                        <i class="fa fa-caret-right"></i> React Native
+                        <i class="fa fa-caret-right"></i> Firebase
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-header">
+                        <p><i class="fa fa-code"></i> MineGuyz</p>
+                        <div class="icons">
+                            <a href="https://github.com/tzadouri/MineGuyz">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://tzadouri.github.io/MineGuyz/">                            
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="info">MineGuyz is a project inspired by the video game Fall Guys in a Minecraft enviornment. It utilizes reinforcement learning and CNNs, with the assistance of depth mapping and image segmentation, to allow the agent to finish the cross line first and win the competition by avoiding all obstacles.</p>                     
+                    <div class="technologies">
+                        <i class="fa fa-caret-right"></i> Python
+                        <i class="fa fa-caret-right"></i> Pytorch
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-header">
+                        <p><i class="fa fa-code"></i> Report Card</p>
+                        <div class="icons">
+                            <a href="https://github.com/humza288/ReportCardSwiftUI">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="info">iOS application built with Swift and Swift UI to help students keep track of grades and overall GPA across multiple classes and terms as well as to suggest additional needed percentages to achieve grade targets.</p>                     
+                    <div class="technologies">
+                        <i class="fa fa-caret-right"></i> Swift
+                        <i class="fa fa-caret-right"></i> SwiftUi/UiKit
+                        <i class="fa fa-caret-right"></i> CloudKit
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-header">
+                        <p><i class="fa fa-code"></i> Personal Site V2</p>
+                        <div class="icons">
+                            <a href="https://github.com/humza288/PersonalSiteV2">                            
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="info">Second edtion of my personal site built with AngularJS, HTML, & CSS. Designed to avoid superflouous frameworks such as Bootstrap.</p>                     
+                    <div class="technologies">
+                        <i class="fa fa-caret-right"></i> HTML
+                        <i class="fa fa-caret-right"></i> CSS
+                        <i class="fa fa-caret-right"></i> AngularJS
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-header">
+                        <p><i class="fa fa-code"></i> Personal Site V1</p>
+                        <div class="icons">
+                            <div class="icons">
+                                <a href="https://github.com/humza288/PersonalSiteV1">                            
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="info">First edtion of my full-stack personal site built with HTML, CSS, Bootstrap, Django and AngularJS. Originally hosted and delpoyed on GitHub pages.</p>                     
+                    <div class="technologies">
+                        <i class="fa fa-caret-right"></i> HTML
+                        <i class="fa fa-caret-right"></i> CSS
+                        <i class="fa fa-caret-right"></i> AngularJS
+                        <i class="fa fa-caret-right"></i> Bootstrap
+                        <i class="fa fa-caret-right"></i> Django
+                    </div>
+                </div>
+            </div>
+            <div class="more-button"> 
+                <p>More to come...</p>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <p class="heading">Contact</p>
+            <form>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email..."><br>
+                <label for="phone">Phone</label><br>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number..."><br>
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter at least a 10 character message..."></textarea>            
+            </form>
+            <div class="submit-button"> 
+                <p>Submit</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                © The Humza, 2021
+            </p>
+            <span class="commit-count">
+                😎 💻
+            </span>
+        </div>
+
+    </div>
+
+</body>
+</html>
