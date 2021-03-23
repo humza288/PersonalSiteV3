@@ -83,6 +83,7 @@ body {
   margin-left: 2.5px;
   margin-right: 2.5px;
   font-family: 'Oswald', sans-serif;
+  font-weight: bold;
   font-size: 20px;
   color: black;
 }
@@ -106,7 +107,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 72.5vh;
+  min-height: 100vh;
   width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,16 +116,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top: 100px !important;
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
-  padding-bottom: 50px;
 }
 
 .main-container .front-banner img {

@@ -58,11 +58,11 @@ app.run(function ($rootScope, $timeout, $http) {
 
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos && currentScrollPos > 50) {
+    if (prevScrollpos > currentScrollPos && currentScrollPos > 5) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar").classList.add("box-shadow")
     }
-    else if (currentScrollPos < 75){
+    else if (currentScrollPos < 5){
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar").classList.remove("box-shadow")
     } 
