@@ -93,6 +93,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .main-container .front-banner {
+    background-attachment: scroll !important;
+  }
   .main-container .front-banner .greeting {
     font-size: 40px !important;
   }
