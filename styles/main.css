@@ -475,6 +475,7 @@ body {
 
 .main-container .contact form {
   margin-bottom: 75px;
+  -webkit-appearance: none;
 }
 
 .main-container .contact form label {
