@@ -19,8 +19,8 @@ html {
 
 body {
   margin: 0;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
 }
 
 .box-shadow {
@@ -168,6 +168,14 @@ body {
   min-height: 0 !important;
 }
 
+.main-container .front-banner .profile-image {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
 .main-container .front-banner img {
   border-radius: 25%;
   width: 300px;
@@ -182,6 +190,11 @@ body {
   font-size: 60px;
   margin: 0;
   margin-bottom: 50px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 .main-container .front-banner .greeting span {
@@ -192,6 +205,11 @@ body {
   max-width: 600px;
   font-family: 'Poppins-Medium', sans-serif;
   font-size: 16px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 .main-container .front-banner .details a {
@@ -205,6 +223,11 @@ body {
 
 .main-container .front-banner .links {
   margin-top: 40px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 .main-container .front-banner .links a {
@@ -269,10 +292,17 @@ body {
   background: #F5F5F5;
   -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .main-container .about .cards-container .skills-card div {
   margin-top: 10px;
+}
+
+.main-container .about .cards-container .skills-card div .degrees {
+  color: #00c6ff;
 }
 
 .main-container .about .cards-container .skills-card div .title {
@@ -289,32 +319,6 @@ body {
 
 .main-container .about .cards-container .skills-card div i {
   padding: 10px;
-}
-
-.main-container .about .cards-container .education-card {
-  text-align: center;
-  font-family: 'Poppins-Medium', sans-serif;
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  padding: 2rem;
-  width: 400px;
-  max-width: calc(95vw - 4rem);
-  background: #F5F5F5;
-  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
-}
-
-.main-container .about .cards-container .education-card div {
-  margin-top: 10px;
-}
-
-.main-container .about .cards-container .education-card div .title {
-  font-size: 25px;
-}
-
-.main-container .about .cards-container .education-card div .degrees {
-  color: #00c6ff;
 }
 
 .main-container .projects {
@@ -367,6 +371,11 @@ body {
   background: #F5F5F5;
   -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: translateY(-30);
+          transform: translateY(-30);
 }
 
 .main-container .projects .project-item .project-item-header {
@@ -471,6 +480,14 @@ body {
   font-size: 50px;
   margin: 0;
   margin-bottom: 50px;
+}
+
+.main-container .contact .main-form {
+  opacity: 0;
+  -webkit-transform: translateY(-30);
+          transform: translateY(-30);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .main-container .contact form {
