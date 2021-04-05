@@ -577,7 +577,6 @@ body {
 
 .main-container .contact form {
   margin-bottom: 75px;
-  -webkit-appearance: none;
 }
 
 .main-container .contact form label {
@@ -628,7 +627,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   font-size: 16px;
-  background: #FFFFFF;
+  background: #FFFFFF !important;
   -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }

@@ -490,7 +490,6 @@ body {
 
         form {
             margin-bottom: 75px;
-            -webkit-appearance: none;
             
             label {
                 font-family: 'Poppins-Bold', sans-serif;
@@ -542,7 +541,7 @@ body {
                 border-radius: 5px;
                 padding: 20px;
                 font-size: 16px;
-                background: #FFFFFF;
+                background: #FFFFFF !important;
                 box-shadow:  20px 20px 60px #d0d0d0,
                             -20px -20px 60px #ffffff;
 
