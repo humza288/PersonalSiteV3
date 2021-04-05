@@ -121,6 +121,11 @@ body {
 @media screen and (max-width: 900px) {
   .main-container .front-banner {
     background-attachment: scroll !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .main-container .front-banner .greeting {
     font-size: 40px !important;
@@ -165,7 +170,7 @@ body {
 
 .main-container .front-banner img {
   border-radius: 25%;
-  width: 200px;
+  width: 300px;
   margin-top: 50px;
   box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
@@ -261,10 +266,9 @@ body {
   padding: 2rem;
   width: 400px;
   max-width: calc(95vw - 4rem);
-  border-radius: 50px;
-  background: #ffffff;
-  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: #F5F5F5;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
 .main-container .about .cards-container .skills-card div {
@@ -296,10 +300,9 @@ body {
   padding: 2rem;
   width: 400px;
   max-width: calc(95vw - 4rem);
-  border-radius: 50px;
-  background: #ffffff;
-  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: #F5F5F5;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
 .main-container .about .cards-container .education-card div {
@@ -361,10 +364,9 @@ body {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   max-width: calc(95vw - 4rem);
-  border-radius: 50px;
-  background: #ffffff;
-  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: #F5F5F5;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
 .main-container .projects .project-item .project-item-header {
@@ -424,10 +426,10 @@ body {
 }
 
 .main-container .projects .more-button {
-  background-color: #2193b0;
+  background: linear-gradient(145deg, #239dbc, #1e849e);
   text-align: center;
   margin-bottom: 100px;
-  border-radius: 30px;
+  border-radius: 10px;
   -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
@@ -492,8 +494,9 @@ body {
   border-radius: 10px;
   padding: 20px;
   font-size: 16px;
-  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: #F5F5F5;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
 .main-container .contact form textarea {
@@ -508,17 +511,18 @@ body {
   border-radius: 10px;
   padding: 20px;
   font-size: 16px;
-  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: #F5F5F5;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
 .main-container .contact .submit-button {
-  background-color: #2193b0;
+  background: linear-gradient(145deg, #239dbc, #1e849e);
   text-align: center;
   margin-bottom: 100px;
-  border-radius: 50px;
-  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
 .main-container .contact .submit-button p {
