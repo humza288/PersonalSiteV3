@@ -121,8 +121,12 @@ body {
 @media screen and (max-width: 900px) {
   .main-container .front-banner {
     background-attachment: scroll !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
     padding-top: 100px;
     padding-bottom: 100px;
+    min-height: 0 !important;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -163,9 +167,9 @@ body {
           align-items: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  height: -webkit-fit-content !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .main-container .front-banner img {

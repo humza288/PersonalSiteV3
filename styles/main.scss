@@ -109,8 +109,10 @@ body {
     @media screen and (max-width: 900px) {
         .front-banner { 
             background-attachment: scroll !important;
+            justify-content: flex-start !important;
             padding-top: 100px;
             padding-bottom: 100px;
+            min-height: 0 !important;
 
             .greeting {
                 font-size: 40px !important;
@@ -140,7 +142,7 @@ body {
         align-items: center;
         padding-left: 5vw;
         padding-right: 5vw;
-        height: fit-content !important;
+        height: fit-content;
         
         img {
             border-radius: 25%;
