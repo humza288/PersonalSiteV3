@@ -131,11 +131,11 @@ body {
 }
 
 .main-container .front-banner {
-  background: #00c6ff;
+  background: #2193b0;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0072ff), to(#00c6ff));
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -199,16 +199,16 @@ body {
 }
 
 .main-container .front-banner .links {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .main-container .front-banner .links a {
-  color: black;
+  color: white;
 }
 
 .main-container .front-banner .links a i {
-  padding: 7.5px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 30px;
 }
 
 .main-container .front-banner .links i:hover {
@@ -261,6 +261,10 @@ body {
   padding: 2rem;
   width: 400px;
   max-width: calc(95vw - 4rem);
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .about .cards-container .skills-card div {
@@ -292,6 +296,10 @@ body {
   padding: 2rem;
   width: 400px;
   max-width: calc(95vw - 4rem);
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .about .cards-container .education-card div {
@@ -348,11 +356,15 @@ body {
   width: 350px;
   height: 300px;
   border-radius: 20px;
-  padding: 1.5rem;
+  padding: 2rem;
   font-family: 'Poppins-Regular', sans-serif;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   max-width: calc(95vw - 4rem);
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .projects .project-item .project-item-header {
@@ -392,8 +404,8 @@ body {
 .main-container .projects .project-item .technologies {
   font-family: 'Poppins-Medium', sans-serif;
   position: absolute;
-  bottom: 1rem;
-  left: 0.54rem;
+  bottom: 2rem;
+  left: 2rem;
 }
 
 .main-container .projects .project-item .technologies i {
@@ -416,6 +428,8 @@ body {
   text-align: center;
   margin-bottom: 100px;
   border-radius: 30px;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .projects .more-button p {
@@ -475,9 +489,11 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
   font-size: 16px;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .contact form textarea {
@@ -489,16 +505,20 @@ body {
   max-height: 400px;
   margin-top: 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
   font-size: 16px;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .contact .submit-button {
   background-color: black;
   text-align: center;
   margin-bottom: 100px;
-  border-radius: 30px;
+  border-radius: 50px;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .main-container .contact .submit-button p {
