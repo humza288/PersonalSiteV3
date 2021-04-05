@@ -13,6 +13,17 @@
   src: url(/fonts/Poppins-Medium.ttf);
 }
 
+.heading {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .heading {
+    font-size: 35px !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -43,7 +54,7 @@ body {
   width: 100px;
   background-color: black;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 40px;
   box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
@@ -70,6 +81,11 @@ body {
   height: 100vh;
 }
 
+.main-container .heading {
+  border-bottom: 5px solid #1e849e;
+  border-radius: 5px;
+}
+
 .main-container .navbar {
   float: left;
   width: 100vw;
@@ -86,11 +102,52 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   z-index: 2;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.main-container .navbar .burger {
+  margin-top: 10px;
+  display: none;
+  margin-right: 5vw;
+}
+
+.main-container .navbar .burger .burger-line {
+  height: 4px;
+  background-color: white;
+  width: 50px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.main-container .navbar .nav-header {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 35px;
+  color: white;
+  margin-left: 10vw;
+}
+
+.main-container .navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 5vw;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container .navbar .nav-links {
+    display: none;
+  }
+  .main-container .navbar .burger {
+    display: block;
+  }
 }
 
 .main-container .navbar a {
@@ -163,8 +220,8 @@ body {
           align-items: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   min-height: 0 !important;
 }
 
@@ -212,6 +269,12 @@ body {
           transform: translateY(30px);
 }
 
+@media screen and (max-width: 900px) {
+  .main-container .front-banner .details {
+    font-size: 14px !important;
+  }
+}
+
 .main-container .front-banner .details a {
   text-decoration: none;
 }
@@ -257,14 +320,6 @@ body {
           align-items: center;
 }
 
-.main-container .about .heading {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-size: 50px;
-  margin: 0;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
 @media screen and (min-width: 1000px) {
   .main-container .about .cards-container {
     -ms-grid-columns: (1fr)[2] !important;
@@ -297,6 +352,12 @@ body {
   opacity: 0;
 }
 
+@media screen and (max-width: 900px) {
+  .main-container .about .cards-container .skills-card {
+    font-size: 14px !important;
+  }
+}
+
 .main-container .about .cards-container .skills-card div {
   margin-top: 10px;
 }
@@ -307,6 +368,12 @@ body {
 
 .main-container .about .cards-container .skills-card div .title {
   font-size: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container .about .cards-container .skills-card div .title {
+    font-size: 20px !important;
+  }
 }
 
 .main-container .about .cards-container .skills-card div .title .frameworks {
@@ -378,6 +445,22 @@ body {
           transform: translateY(-30);
 }
 
+@media screen and (max-width: 900px) {
+  .main-container .projects .project-item {
+    height: 250px !important;
+  }
+}
+
+.main-container .projects .project-item .info {
+  color: gray;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container .projects .project-item .info {
+    font-size: 14px;
+  }
+}
+
 .main-container .projects .project-item .project-item-header {
   font-family: 'Poppins-Bold', sans-serif;
   font-size: 20px;
@@ -393,6 +476,12 @@ body {
           justify-content: space-between;
   padding-bottom: 0;
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container .projects .project-item .project-item-header {
+    font-size: 18px;
+  }
 }
 
 .main-container .projects .project-item .project-item-header .icons a {
@@ -415,8 +504,8 @@ body {
 .main-container .projects .project-item .technologies {
   font-family: 'Poppins-Medium', sans-serif;
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .main-container .projects .project-item .technologies i {
@@ -429,16 +518,11 @@ body {
           transform: scale(1.05);
 }
 
-.main-container .projects .heading {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-size: 50px;
-}
-
 .main-container .projects .more-button {
   background: linear-gradient(145deg, #239dbc, #1e849e);
   text-align: center;
   margin-bottom: 100px;
-  border-radius: 10px;
+  border-radius: 40px;
   -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
@@ -504,12 +588,43 @@ body {
 .main-container .contact form input {
   font-family: 'Poppins-Bold', sans-serif;
   width: 1000px;
-  max-width: 85vw;
+  max-width: 50vw;
   height: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .main-container .contact form input {
+    max-width: 85vw !important;
+    font-size: 14px !important;
+    height: 7px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main-container .contact form input {
+    max-width: 50vw !important;
+  }
+}
+
+.main-container .contact form textarea {
+  font-family: 'Poppins-Bold', sans-serif;
+  width: 1000px;
+  max-width: 50vw;
+  resize: none;
+  height: 400px;
+  max-height: 400px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
   padding: 20px;
   font-size: 16px;
   background: #F5F5F5;
@@ -517,28 +632,25 @@ body {
           box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
 
-.main-container .contact form textarea {
-  font-family: 'Poppins-Bold', sans-serif;
-  width: 1000px;
-  max-width: 85vw;
-  resize: none;
-  height: 400px;
-  max-height: 400px;
-  margin-top: 20px;
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 16px;
-  background: #F5F5F5;
-  -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+@media screen and (max-width: 900px) {
+  .main-container .contact form textarea {
+    max-width: 85vw !important;
+    font-size: 14px !important;
+    height: 300px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main-container .contact form textarea {
+    max-width: 50vw !important;
+  }
 }
 
 .main-container .contact .submit-button {
   background: linear-gradient(145deg, #239dbc, #1e849e);
   text-align: center;
   margin-bottom: 100px;
-  border-radius: 10px;
+  border-radius: 50px;
   -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
