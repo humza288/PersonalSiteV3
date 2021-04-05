@@ -212,9 +212,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -234,8 +234,8 @@ body {
 }
 
 .main-container .front-banner img {
-  border-radius: 25%;
-  width: 300px;
+  border-radius: 20%;
+  width: 200px;
   margin-top: 50px;
   box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: -1px 4px 16px 0px rgba(0, 0, 0, 0.51);
@@ -367,6 +367,7 @@ body {
 }
 
 .main-container .about .cards-container .skills-card div .title {
+  font-family: 'Poppins-Bold', sans-serif;
   font-size: 25px;
 }
 
@@ -627,7 +628,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   font-size: 16px;
-  background: #F5F5F5;
+  background: #FFFFFF;
   -webkit-box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
           box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
 }
