@@ -288,12 +288,20 @@ body {
 }
 
 .main-container .front-banner .links {
-  margin-top: 40px;
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 600px;
 }
 
 .main-container .front-banner .links a {

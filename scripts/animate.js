@@ -5,7 +5,7 @@ const form = document.querySelector(".main-form");
 const details = document.querySelector(".details");
 const greeting = document.querySelector(".greeting");
 const image = document.querySelector(".profile-image");
-const links = document.querySelector(".links");
+const links = document.querySelectorAll(".links");
 
 console.log(form)
 
@@ -25,6 +25,10 @@ skills_cards.forEach(skills_card => {
 
 education_cards.forEach(education_card => {
     observer.observe(education_card);
+})
+
+links.forEach(links => {
+    observer.observe(links);
 })
 
 items.forEach(item => {
